@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品集｜求职主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+        }
+
+        body {
+            background-color: #f7f8fa;
+            color: #222;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 头部动画 */
+        .header {
+            text-align: center;
+            padding: 60px 0 40px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: #111;
+        }
+
+        .header p {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .tag {
+            background: #e8f3ff;
+            color: #0066cc;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+        }
+
+        /* AI核心亮点卡片 */
+        .ai-card {
+            background: linear-gradient(135deg, #f0f7ff 0%, #f5f9ff 100%);
+            padding: 24px;
+            border-radius: 16px;
+            margin: 40px 0;
+            border-left: 5px solid #007bff;
+            box-shadow: 0 4px 20px #00000008;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s ease 0.2s forwards;
+        }
+
+        .ai-card strong {
+            font-size: 18px;
+            color: #0059b3;
+        }
+
+        /* 通用区块动画 */
+        section {
+            margin: 60px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s ease 0.4s forwards;
+        }
+
+        h2 {
+            font-size: 24px;
+            border-left: 4px solid #007bff;
+            padding-left: 12px;
+            margin-bottom: 24px;
+        }
+
+        /* 项目卡片悬停交互核心效果 */
+        .project {
+            background: #fff;
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+
+        .project h3 {
+            font-size: 19px;
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        .project .time {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            color: #444;
+            font-size: 15.5px;
+        }
+
+        .data-text {
+            color: #007bff;
+            font-weight: 600;
+        }
+
+        /* 技能卡片样式 */
+        .skill-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 10px #00000005;
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* 全局滚动渐入动画 */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 手机端自适应适配 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 28px;
+            }
+            .project {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部个人简介 -->
+        <div class="header">
+            <h1>个人作品集｜求职主页</h1>
+            <p>求职方向：互联网运营 / 内容营销 / 市场 / 产品实习｜AI赋能运营｜数据调研｜全流程项目落地</p>
+            <div class="tags">
+                <span class="tag">内容运营</span>
+                <span class="tag">品牌营销</span>
+                <span class="tag">AIGC落地应用</span>
+                <span class="tag">SPSS数据分析</span>
+                <span class="tag">项目全案落地</span>
+            </div>
+        </div>
+
+        <!-- 核心差异化：AI能力展示（面试官重点看） -->
+        <div class="ai-card">
+            <strong>✨ 核心优势：AI自主赋能 · 快速学习 · 落地迭代能力</strong>
+            <p style="margin-top:12px">本个人主页由本人从0至1自主规划、AI辅助独立搭建、调试并迭代完成，具备成熟的提示词工程与AIGC落地实战能力。熟练将各类AI大模型应用于职场全场景，包含行业调研分析、文案量产、脚本策划、视觉素材制作、视频内容产出、报告优化与办公提效，具备互联网岗位核心所需的自主学习、工具赋能、落地执行与持续迭代能力。</p>
+        </div>
+
+        <!-- 关于我 -->
+        <section>
+            <h2>关于我</h2>
+            <div class="skill-item">
+                <p>具备新媒体全案运营、品牌商务对接、市场实证调研、公益项目从0-1落地的完整实战经验。擅长结合热点策划爆款内容、搭建用户运营体系；熟练使用SPSS完成问卷统计、交叉分析、用户画像分层与数据复盘；擅长依托AIGC工具实现内容创新、流程提效与成果优化，统筹能力、执行能力、成长迭代能力突出。</p>
+            </div>
+        </section>
+
+        <!-- 核心项目经历 -->
+        <section>
+            <h2>实习与项目经历</h2>
+
+            <div class="project">
+                <h3>微博校园｜校园媒体运营实习生</h3>
+                <div class="time">2025.04 - 至今</div>
+                <p>全权负责校园官微选题策划、热点内容运营与品牌商务合作，结合用户偏好打造多篇爆款博文，周均内容阅读量20000+，单篇最高<span class="data-text">20万+阅读</span>。对接华为、vivo、荣耀等头部品牌，独立统筹模特、场景等校园资源，落地8场线上营销活动，助力品牌曝光平均提升<span class="data-text">21%+</span>。通过UGC激励运营激活用户活性，在职期间账号粉丝增长<span class="data-text">20%+</span>、互动率提升<span class="data-text">15%</span>，助力账号3次登上同城热搜，入选<span class="data-text">全国高校最具影响力账号TOP5</span>。</p>
+            </div>
+
+            <div class="project">
+                <h3>《AI老年使用指南》公益项目｜项目负责人</h3>
+                <div class="time">全流程从0-1创意落地｜多城试点项目</div>
+                <p>独立完成项目创意策划、内容撰写、社区对接、落地执行、效果复盘全业务闭环。累计对接8个老年社区，成功落地3座城市试点，累计服务触达<span class="data-text">3000+人次</span>。全程运用AIGC工具辅助内容优化、素材迭代与文案打磨，完成轻量化公益内容产品的完整落地验证，具备极强的从零到一项目统筹与落地能力。</p>
+            </div>
+
+            <div class="project">
+                <h3>就业市场分析调研项目｜项目负责人</h3>
+                <div class="time">市场实证调研｜数据分析｜全媒体宣发</div>
+                <p>聚焦文科就业市场痛点开展专项实证调研，运用SPSS完成问卷数据清洗、交叉分析、卡方检验与用户分层画像。依托AIGC工具独立完成分镜脚本创作、视觉素材制作与11分钟项目宣传视频产出，全网播放量<span class="data-text">10000+</span>。独立撰写新闻稿并获大工新闻网独家报道，项目总曝光量<span class="data-text">20000+</span>，实现学术调研项目传播破圈，完成调研、内容、传播全闭环落地。</p>
+            </div>
+        </section>
+
+        <!-- 专业技能矩阵 -->
+        <section>
+            <h2>核心技能矩阵</h2&gt>
+            <div class="skill-item">
+                <strong>🤖 AI赋能应用能力</strong&gt>
+                <p>熟练使用ChatGPT、Claude、Kimi等主流大模型，精通标准化提示词工程，可独立完成行业调研、文案量产、脚本创作、视觉素材生成、视频辅助制作、报告优化、办公全场景提效，具备真实AI落地职场的实战经验。</p>
+            </div&gt>
+            <div class="skill-item">
+                <strong>📊 数据调研分析能力</strong&gt>
+                <p>熟练运用SPSS完成数据描述统计、交叉分析、显著性检验、用户画像分层、数据结论提炼、调研报告撰写，具备完整的问卷调研与实证分析能力。</p>
+            </div&gt>
+            <div class="skill-item">
+                <strong>📱 新媒体运营与营销能力</strong&gt>
+                <p>擅长热点选题、爆款内容策划、全媒体宣发、品牌商务对接、线上活动落地、UGC用户运营、数据复盘优化，具备从内容生产到流量增长、品牌声量提升的全链路运营能力。</p>
+            </div&gt>
+        </section>
+
+        <footer>
+            <p>本网站由本人AI辅助独立搭建 & 持续迭代更新中｜个人求职作品集主页</p>
+        </footer>
+    </div>
+</body>
+</html>
